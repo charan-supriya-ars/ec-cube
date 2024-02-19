@@ -1,0 +1,98 @@
+<?php //Eccube.Entity.Customer
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        (($f = &\Symfony\Component\VarExporter\Internal\Registry::$factories)['Symfony\\Component\\Validator\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\ClassMetadata'))(),
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity')),
+        ($f['Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::f('Symfony\\Component\\Validator\\Mapping\\PropertyMetadata'))(),
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\NotBlank'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\NotBlank')),
+        clone ($p['Symfony\\Component\\Validator\\Constraints\\Length'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\Length')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'constraints' => [
+                [
+                    $o[1],
+                ],
+                2 => [
+                    $o[3],
+                    $o[4],
+                ],
+            ],
+            'constraintsByGroup' => [
+                [
+                    'Default' => [
+                        $o[1],
+                    ],
+                    'Customer' => [
+                        $o[1],
+                    ],
+                ],
+                2 => [
+                    'Default' => [
+                        $o[3],
+                        $o[4],
+                    ],
+                    'Customer' => [
+                        $o[3],
+                        $o[4],
+                    ],
+                ],
+            ],
+            'name' => [
+                'Eccube\\Entity\\Customer',
+                2 => 'plain_password',
+            ],
+            'defaultGroup' => [
+                'Customer',
+            ],
+            'members' => [
+                [
+                    'plain_password' => [
+                        $o[2],
+                    ],
+                ],
+            ],
+            'properties' => [
+                [
+                    'plain_password' => $o[2],
+                ],
+            ],
+            'groups' => [
+                1 => [
+                    'Default',
+                    'Customer',
+                ],
+                3 => [
+                    'Default',
+                    'Customer',
+                ],
+                [
+                    'Default',
+                    'Customer',
+                ],
+            ],
+            'message' => [
+                1 => 'form_error.customer_already_exists',
+            ],
+            'repositoryMethod' => [
+                1 => 'getNonWithdrawingCustomers',
+            ],
+            'fields' => [
+                1 => 'email',
+            ],
+            'class' => [
+                2 => 'Eccube\\Entity\\Customer',
+            ],
+            'property' => [
+                2 => 'plain_password',
+            ],
+            'max' => [
+                4 => 4096,
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
